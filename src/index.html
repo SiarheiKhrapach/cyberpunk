@@ -58,7 +58,8 @@
     </section-info>
     <section class="main">
         <div class="container">
-            <div class="main__play-game">
+            <div class="input-block">
+                <div class="main__play-game">
                 <div class="main__promo">
                     <img src="./images/object/vector-star.svg" alt="" class="promo-star">
                     <p class="main__promo-text">акция</p>
@@ -75,8 +76,26 @@
                 <div class="main__form-container">
                     <input type="text" id="name" class="main__form-input" placeholder="Твой е-mail">
                 </div>
-                
+                <div class="main__upload-container">
+                    <label for="file-upload" class="main__upload-label">
+                        <p class="main__upload-title-txt">Прикрепить скриншот</p>
+                        <p class="main__upload-formats">.png / .jpg / .pdf</p>
+                    </label>
+                    <input type="file" id="file-upload" class="main__upload-input" accept=".png, .jpg, .pdf">
+                  </div>
             </div>
+            <button class="main__button">Отправить</button>
+            <div class="main__checkbox-container">
+                <label class="main__custom-checkbox">
+                  <input type="checkbox" class="main__hidden-checkbox">
+                  <span class="main__checkmark"></span>
+                </label>
+                <span class="main__heckbox-label">Согласен на обработку персональных данных</span>
+              </div>
+            </div>
+        </div>
+        <div class="console">
+            <img src="../src/images/xbox-ps.png" alt="" class="consol-img">
         </div>
     </section>
 </body>

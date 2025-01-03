@@ -147,7 +147,7 @@ body {
         font-weight: 700;
         line-height: 40px;
         &:hover {
-            background-color: rgba(200, 19, 19, 0.992);
+            background-color: #2f2f2d;
         }
     }
 }
@@ -251,7 +251,6 @@ body {
 .main {
     margin-top: -36px;
     background-color: black;
-    height: 500px;
     &__play-game {
         display: flex;
         align-items: flex-end;
@@ -295,17 +294,129 @@ body {
         color: white;
     }
     &__form-container {
+        margin-top: 98px;
         display: flex;
         flex-direction: column;
         max-width: 460px;
     }
+    &__form-container:nth-child(2) {
+        margin-top: 35px;
+    }
     &__form-input {
         border: none;              
-        border-bottom: 1px solid #fff;
+        border-bottom: 1px solid #ffffff6f;
         background: transparent;
-        color: #fff;
+        color: #ffffff;
         font-size: 14px;
         padding: 5px 0;
         outline: none;
+        padding-bottom: 14px;
     }
+    &__upload-container {
+        margin-top: 35px;
+        border: 2px dashed #ffffff75;
+        background-color: transparent;
+        text-align: center;
+        padding: 39px;
+        max-width: 460px;
+     }
+    &__upload-input {
+        display: none;
+    }
+    &__upload-title-txt {
+        font-size: 18px;
+        font-weight: bold;
+        color: #ffffff63;
+        text-decoration: underline;
+        margin: 0;
+        font-family: $roboto;
+        cursor: pointer;
+    }
+    &__upload-formats {
+        font-size: 14px;
+        color: #aaa;
+        margin: 5px 0 0;
+        font-family: $roboto;
+    }
+    &__upload-container:hover {
+        cursor: pointer;
+    }
+  &__button {
+        margin-top: 54px;
+        padding: 15px 50px;
+        border: none;
+        background-color: #F8F200;
+        font-family: $roboto;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 21px;
+        transition: 0.3s;
+    }
+    &__button:hover {
+        background-color: #fffd8c;
+    }
+  /* Контейнер для чекбокса */
+    &__checkbox-container {
+        margin-top: 15px;
+        display: flex;
+        align-items: flex-end;
+        font-family: Arial, sans-serif;
+        color: #fff;
+    }
+  
+  /* Скрытый стандартный чекбокс */
+    &__hidden-checkbox {
+        display: none;
+    }
+  
+  /* Стиль кастомного чекбокса */
+    &__custom-checkbox {
+        position: relative;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+  
+    &__custom-checkbox &__checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        border: 2px solid #fff;
+        background-color: transparent;
+        border-radius: 2px;
+    }
+  
+  /* Иконка галочки */
+  &__custom-checkbox &__checkmark::after {
+    content: '';
+    position: absolute;
+    display: none;
+    left: 7px;
+    top: 1px;
+    width: 4px;
+    height: 11px;
+    border: solid #ff0;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+  } 
+  
+  /* Когда чекбокс активирован */
+  &__hidden-checkbox:checked + .checkmark {
+    background-color: #000; /* Черный фон */
+    border-color: #ff0; /* Желтая граница */
+  }
+  
+  &__hidden-checkbox:checked + &__checkmark::after {
+    display: block;
+  }
+  
+  /* Стиль текста */
+  &__checkbox-label {
+    font-size: 16px;
+  }
+  
 }
