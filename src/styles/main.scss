@@ -133,10 +133,18 @@ body {
             transition: 0.6s;
             padding-right: 36px;
         }
+        @media (max-width: 495px) {
+            width: 100%;
+            height: 763px;
+            margin-left: 142px;
+            padding: 0;
+            margin-top: 196px;
+            background-image: url(../images/background-ligt.png);
+         }
     }
     &__txt {
         margin: 0;
-        width: 340px;
+        width: 470px;
         padding-top: 30px;
         padding-left: 77px;
         font-size: 62px;
@@ -146,10 +154,13 @@ body {
         @media (max-width: 1024px) {
             width: 400px;
         }
-        @media (max-width: 720px) {
+        @media (max-width: 495px) {
+            width: 295px;
             font-size: 30px;
             font-weight: 400;
             line-height: 39px;
+            text-align: center;
+            padding-left: 13px;
         }
     }
     &__button {
@@ -165,6 +176,12 @@ body {
         font-size: 24px;
         font-weight: 700;
         line-height: 40px;
+        @media (max-width: 495px) {
+            margin-top: 9px;
+            font-size: 20px;
+            padding: 10px 50px;
+            margin-left: 38px;
+        }
     }
 }
 .section-info {
@@ -177,6 +194,13 @@ body {
         @media (max-width: 1024px) {
             width: 620px;
         }
+        @media (max-width: 570px) {
+            padding-left: 12px;
+            width: 257px;
+            font-size: 30px;
+            font-weight: 400;
+            line-height: 39px;
+        }
     }
     &__info {
         max-width: 100%;
@@ -188,7 +212,9 @@ body {
         margin-bottom: 0;
         width: 950px;
         @media (max-width: 1024px) {
-            width: 788px;
+            margin-top: 10px;
+            padding-left: 12px;
+            width: 100%;
         }
     }
     &__img-content {
@@ -208,6 +234,9 @@ body {
         @media (max-width: 1200px) {
             flex-direction: row;
             width: 100%;
+        }
+        @media (max-width: 760px) {
+           display: grid;
         }
     }
     &__city-img01 {
@@ -264,6 +293,9 @@ body {
         height: 70px;
         position: relative;
         overflow: hidden;
+        @media (max-width: 620px) {
+            padding-top: 140px;
+         }
         img {
             position: absolute;
             left: 50%;
@@ -280,6 +312,9 @@ body {
 .main {
     margin-top: -36px;
     background-color: black;
+    @media (max-width: 620px) {
+        margin-top: -71px;
+     }
     &__play-game {
         display: flex;
         align-items: flex-end;
@@ -295,9 +330,6 @@ body {
         position: relative;
         padding-top: 15px;
         align-items: center;
-        @media (max-width: 1000px) {
-            padding-left: 36px;
-        }
     }
     &__promo-text {
         padding-top: 15px;
@@ -318,9 +350,8 @@ body {
         line-height: 62px;
         color: white;
         margin: 0;
-        @media (max-width: 1000px) {
-            padding-left: 36px;
-            width: 460px;
+        @media (max-width: 372px) {
+            font-size: 30px;
         }
     }
     &__info-txt {
@@ -337,10 +368,17 @@ body {
             padding-left: 36px;
             width: 460px;
         }
+        @media (max-width: 510px) {
+            padding-left: 12px;
+            width: 296px;
+        }
     }
     &__console {
         @media (max-width: 1300px) {
             padding-left: 36px;
+        }
+        @media (max-width: 510px) {
+            padding-left: 12px;
         }
     }
     &__input-console {
@@ -351,6 +389,10 @@ body {
         display: flex;
         flex-direction: column;
         max-width: 460px;
+        @media (max-width: 510px) {
+            margin-top: 70px;
+            width: 270px;
+        }
     }
     &__form-container:nth-child(2) {
         margin-top: 35px;
@@ -372,6 +414,10 @@ body {
         text-align: center;
         padding: 39px;
         max-width: 460px;
+        @media (max-width: 510px) {
+            margin-top: 35px;
+            width: 190px;
+        }
      }
     &__upload-input {
         display: none;
@@ -384,6 +430,9 @@ body {
         margin: 0;
         font-family: $roboto;
         cursor: pointer;
+        @media (max-width: 510px) {
+            font-size: 16px;
+        }
     }
     &__upload-formats {
         font-size: 14px;
@@ -416,6 +465,9 @@ body {
         font-family: Arial, sans-serif;
         color: #fff;
         margin-bottom: 70px;
+        @media (max-width: 420px) {
+            font-size: 12px;
+        }
     }
     &__hidden-checkbox {
         display: none;
@@ -459,6 +511,9 @@ body {
     }
     &__checkbox-label {
         font-size: 16px;
+        @media (max-width: 420px) {
+            font-size: 12px;
+        }
     }
     &__console-block {
         width: 100%;
@@ -503,6 +558,9 @@ body {
     &__flex-block {
         display: flex;
         gap: 32px;
+        @media (max-width: 890px) {
+            flex-direction: column;
+        }
     }
     &__background-yellow {
         width: 100%;
@@ -557,6 +615,9 @@ body {
         @media (max-width: 1010px) {
             flex-direction: column;
         }
+        @media (max-width: 890px) {
+            flex-direction: row;
+        }
     }
     &__info-txt-container {
         max-width: 624px;
@@ -567,6 +628,14 @@ body {
             line-height: 81px;
             font-family: $font;
             margin: 0;
+            @media (max-width: 410px) {
+                font-size: 30px;
+                font-weight: 400;
+                line-height: 39px;
+            }
+        }
+        @media (max-width: 890px) {
+            padding-left: 12px;
         }
     }
     &__txt-info {
@@ -575,6 +644,9 @@ body {
         font-weight: 400;
         line-height: 34px;
         margin: 0;
+        @media (max-width: 410px) {
+            font-size: 16px;
+        }
     }
     &__icon-description {
         font-family: $roboto;
