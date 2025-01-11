@@ -1,5 +1,11 @@
 @use 'font';
 @use 'var';
+@font-face {
+    font-family: 'Archangelsk Regular';
+    src: url(../font/Archangelsk\ Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
 @import url(./_font.scss);
 @import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap);
 
